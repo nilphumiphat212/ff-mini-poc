@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="108" height="108">
+  <!-- CHG-016 Sunvale app icon: a sun rising behind a small island over the sea. 108x108 adaptive canvas;
+       the sun, island and palm sit inside the 66-unit safe zone (21..87). -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6f3c"/><stop offset="0.55" stop-color="#ffb23f"/><stop offset="1" stop-color="#ffd86b"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22b8cf"/><stop offset="1" stop-color="#0a5f7d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7c2" stop-opacity="0.9"/><stop offset="1" stop-color="#fff7c2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="108" height="108" fill="url(#sky)"/>
+  <g stroke="#fff1a8" stroke-width="2.4" stroke-linecap="round" opacity="0.55">
+    <line x1="54" y1="22" x2="54" y2="30"/><line x1="31" y1="31" x2="37" y2="37"/><line x1="77" y1="31" x2="71" y2="37"/>
+    <line x1="22" y1="52" x2="30" y2="52"/><line x1="86" y1="52" x2="78" y2="52"/>
+  </g>
+  <circle cx="54" cy="60" r="30" fill="url(#glow)"/>
+  <circle cx="54" cy="60" r="19" fill="#fff3b0"/>
+  <path d="M0 64 H108 V108 H0 Z" fill="url(#sea)"/>
+  <path d="M30 65 C36 55 46 52 54 53 C63 54 72 58 79 65 Z" fill="#2f9e5b"/>
+  <path d="M38 65 C44 59 50 58 56 59 C60 60 64 62 66 65 Z" fill="#3fbf6e"/>
+  <path d="M60 58 C60 50 61 44 64 38" stroke="#7a4a24" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <g fill="#1f7a45">
+    <path d="M64 38 C58 34 52 35 49 39 C55 37 59 38 64 39 Z"/>
+    <path d="M64 38 C70 33 76 34 79 38 C73 37 69 38 64 39 Z"/>
+    <path d="M64 38 C61 31 63 27 67 25 C66 30 66 34 65 38 Z"/>
+    <path d="M64 38 C69 40 72 44 72 48 C69 44 67 42 64 39 Z"/>
+    <path d="M64 38 C59 40 56 44 56 48 C59 44 61 42 64 39 Z"/>
+  </g>
+  <g stroke="#e6fbff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M26 74 q5 -3 10 0 t10 0"/><path d="M60 78 q5 -3 10 0 t10 0"/><path d="M38 86 q5 -3 10 0 t10 0"/>
+  </g>
+</svg>

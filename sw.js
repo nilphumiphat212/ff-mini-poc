@@ -1,5 +1,5 @@
 // CR-013 / SPEC-016: persistent asset cache. Bump CACHE only to force-evict everything.
-const CACHE = 'ffm-cache-v1';
+const CACHE = 'ffm-cache-v2';
 const HASHED = /\/assets\/[^/]*-[\w-]{8}\.(js|css)$/;
 
 self.addEventListener('install', () => self.skipWaiting());
@@ -41,11 +41,11 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (url.pathname.includes('/assets/')) {
-    // Models, textures, audio keep their names: serve the cache, refresh in the background.
+    // Models, textures, audio: serve cache first, fetch and store on miss.
     event.respondWith(
       caches.match(request).then((hit) => {
-        const refresh = fetchAndStore(request).catch(() => hit);
-        return hit || refresh;
+        if (hit) return hit;
+        return fetchAndStore(request);
       })
     );
   }
