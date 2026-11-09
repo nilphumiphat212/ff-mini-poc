@@ -1,5 +1,5 @@
 // CR-013 / SPEC-016: persistent asset cache. Bump CACHE only to force-evict everything.
-const CACHE = 'ffm-cache-v7';
+const CACHE = 'ffm-cache-v8';
 const HASHED = /\/assets\/[^/]*-[\w-]{8}\.(js|css)$/;
 
 self.addEventListener('install', () => self.skipWaiting());
