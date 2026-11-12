@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "files": {
+    "noise": "noise.webp",
+    "masks": "masks.webp",
+    "masks_half": "masks_half.webp",
+    "flip_fire": "flip_fire.webp",
+    "flip_fire_half": "flip_fire_half.webp",
+    "flip_smoke": "flip_smoke.webp",
+    "flip_smoke_half": "flip_smoke_half.webp",
+    "flip_spark": "flip_spark.webp",
+    "flip_spark_half": "flip_spark_half.webp",
+    "decals": "decals.webp",
+    "decals_half": "decals_half.webp",
+    "ramps": "ramps.webp",
+    "fx_pack": "fx_pack.webp"
+  },
+  "masks": [
+    "slash",
+    "swirl",
+    "ring",
+    "glow",
+    "flame",
+    "glint4",
+    "star6",
+    "leaf",
+    "petal",
+    "shard",
+    "splat",
+    "brush",
+    "rune_ring",
+    "rune_hex",
+    "rune_clock",
+    "rune_circuit"
+  ],
+  "maskGrid": 4,
+  "flipFrames": 16,
+  "flipGrid": 4,
+  "decals": [
+    "scorch",
+    "crack",
+    "frost",
+    "acid"
+  ],
+  "decalGrid": 2,
+  "ramps": [
+    "chrono",
+    "gold_time",
+    "forge",
+    "steel",
+    "bloom",
+    "halo",
+    "venom",
+    "tracer",
+    "fire",
+    "hive",
+    "shadow",
+    "mirror",
+    "blade",
+    "frost",
+    "volt",
+    "ink",
+    "prism",
+    "titan",
+    "void",
+    "acid",
+    "steam"
+  ],
+  "rampSize": [
+    256,
+    32
+  ],
+  "noiseChannels": [
+    "fbm",
+    "cells",
+    "streak",
+    "grain"
+  ]
+}
