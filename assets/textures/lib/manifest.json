@@ -1,0 +1,115 @@
+{
+  "generator": "make_material_library.py (CHG-049)",
+  "size": 512,
+  "materials": [
+    {
+      "name": "grass",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "grass_albedo.webp",
+      "normal": "grass_normal.webp"
+    },
+    {
+      "name": "dirt",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "dirt_albedo.webp",
+      "normal": "dirt_normal.webp"
+    },
+    {
+      "name": "rock",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 3.0,
+      "albedo": "rock_albedo.webp",
+      "normal": "rock_normal.webp"
+    },
+    {
+      "name": "moss",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "moss_albedo.webp",
+      "normal": "moss_normal.webp"
+    },
+    {
+      "name": "sand",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "sand_albedo.webp",
+      "normal": "sand_normal.webp"
+    },
+    {
+      "name": "plaster",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "plaster_albedo.webp",
+      "normal": "plaster_normal.webp"
+    },
+    {
+      "name": "brick",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 1.0,
+      "albedo": "brick_albedo.webp",
+      "normal": "brick_normal.webp"
+    },
+    {
+      "name": "rooftile",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "rooftile_albedo.webp",
+      "normal": "rooftile_normal.webp"
+    },
+    {
+      "name": "wood",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "wood_albedo.webp",
+      "normal": "wood_normal.webp"
+    },
+    {
+      "name": "concrete",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 2.0,
+      "albedo": "concrete_albedo.webp",
+      "normal": "concrete_normal.webp"
+    },
+    {
+      "name": "bark",
+      "kind": "surface",
+      "size": 512,
+      "tileMeters": 1.0,
+      "albedo": "bark_albedo.webp",
+      "normal": "bark_normal.webp"
+    },
+    {
+      "name": "leaves",
+      "kind": "card",
+      "size": 512,
+      "tileMeters": 1.0,
+      "albedo": "leaves_albedo.webp"
+    },
+    {
+      "name": "pine",
+      "kind": "card",
+      "size": 512,
+      "tileMeters": 1.0,
+      "albedo": "pine_albedo.webp"
+    },
+    {
+      "name": "grass_card",
+      "kind": "card",
+      "size": 512,
+      "tileMeters": 1.0,
+      "albedo": "grass_card_albedo.webp"
+    }
+  ]
+}

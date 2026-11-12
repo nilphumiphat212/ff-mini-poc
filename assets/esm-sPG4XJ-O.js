@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-MIAWguQv.js","assets/index-LxwrFUsS.js","assets/terrainSplat-D1vjiGpy.js"])))=>i.map(i=>d[i]);
+import{n as e,o as t}from"./index-LxwrFUsS.js";var n=e(`App`,{web:()=>t(()=>import(`./web-MIAWguQv.js`).then(e=>new e.AppWeb),__vite__mapDeps([0,1,2]))});export{n as App};
