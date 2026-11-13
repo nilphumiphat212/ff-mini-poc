@@ -70,6 +70,184 @@
     256,
     32
   ],
+  "rampStops": {
+    "chrono": [
+      "ffffff",
+      "d6f4ff",
+      "5cc8ff",
+      "1f6bff",
+      "7a2cff",
+      "140838"
+    ],
+    "gold_time": [
+      "ffffff",
+      "fff4c8",
+      "ffd040",
+      "ff9a10",
+      "c8308a",
+      "2a0a40"
+    ],
+    "forge": [
+      "fffbe8",
+      "ffe08a",
+      "ffb030",
+      "ff5a0a",
+      "c01830",
+      "1e1014"
+    ],
+    "steel": [
+      "ffffff",
+      "e8f4ff",
+      "9cd0ff",
+      "3c86e8",
+      "3a3aa8",
+      "0c1024"
+    ],
+    "bloom": [
+      "ffffff",
+      "e8fff0",
+      "7dffb8",
+      "18e07a",
+      "0a9aa0",
+      "042a24"
+    ],
+    "halo": [
+      "ffffff",
+      "fffbd8",
+      "ffe46a",
+      "ffc020",
+      "30d890",
+      "06342a"
+    ],
+    "venom": [
+      "fbffe8",
+      "e8ff80",
+      "b0ff30",
+      "58d818",
+      "8a1ad8",
+      "1a0630"
+    ],
+    "tracer": [
+      "ffffff",
+      "fff8d0",
+      "ffd84a",
+      "ffa818",
+      "22b8ff",
+      "06203a"
+    ],
+    "fire": [
+      "ffffff",
+      "fff2b0",
+      "ffc040",
+      "ff6a10",
+      "e0183a",
+      "2a0a14"
+    ],
+    "hive": [
+      "ffffff",
+      "fff0c0",
+      "ffc040",
+      "ff9010",
+      "10b8a8",
+      "0a2420"
+    ],
+    "shadow": [
+      "fbf0ff",
+      "ffb0f4",
+      "ff4ad8",
+      "a020ff",
+      "4a18c0",
+      "0a0218"
+    ],
+    "mirror": [
+      "ffffff",
+      "eefaff",
+      "9cd4ff",
+      "4a90ff",
+      "8a5aff",
+      "1a1440"
+    ],
+    "blade": [
+      "ffffff",
+      "fff0f4",
+      "ffa0b4",
+      "ff2a50",
+      "9a0870",
+      "1a0208"
+    ],
+    "frost": [
+      "ffffff",
+      "e8fdff",
+      "8aecff",
+      "20b8ff",
+      "3a50e8",
+      "0a1240"
+    ],
+    "volt": [
+      "ffffff",
+      "e0fbff",
+      "70e4ff",
+      "10a8ff",
+      "6a3aff",
+      "140a40"
+    ],
+    "ink": [
+      "fff8e8",
+      "ffe08a",
+      "f2b040",
+      "20c0b8",
+      "8a40e0",
+      "140a24"
+    ],
+    "prism": [
+      "ffffff",
+      "fff0fa",
+      "ff98e4",
+      "40c8ff",
+      "a070ff",
+      "1a1440"
+    ],
+    "titan": [
+      "fffbe8",
+      "ffe0a0",
+      "ffb040",
+      "d86a14",
+      "902a1a",
+      "1a120c"
+    ],
+    "void": [
+      "f0faff",
+      "9ae8ff",
+      "5a8aff",
+      "8a2cff",
+      "c018b0",
+      "040010"
+    ],
+    "acid": [
+      "fbffe0",
+      "e8ff70",
+      "a8ff28",
+      "40d030",
+      "0a9a8a",
+      "04241c"
+    ],
+    "steam": [
+      "ffffff",
+      "fff0e0",
+      "ffc890",
+      "ff8030",
+      "6ab8ff",
+      "2a3a4a"
+    ]
+  },
+  "rampStopAt": [
+    0.0,
+    0.18,
+    0.42,
+    0.66,
+    0.86,
+    1.0
+  ],
   "noiseChannels": [
     "fbm",
     "cells",
