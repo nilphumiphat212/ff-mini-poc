@@ -110,6 +110,13 @@
       "size": 512,
       "tileMeters": 1.0,
       "albedo": "grass_card_albedo.webp"
+    },
+    {
+      "name": "flower_card",
+      "kind": "card",
+      "size": 512,
+      "tileMeters": 1.0,
+      "albedo": "flower_card_albedo.webp"
     }
   ]
 }
