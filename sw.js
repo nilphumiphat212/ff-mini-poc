@@ -22,6 +22,16 @@ async function fetchAndStore(request) {
   return response;
 }
 
+async function freshPage(request) {
+  const response = await fetch(request.url, { cache: 'no-store', credentials: 'same-origin' });
+  if (response.redirected) return fetchAndStore(request);
+  if (response.ok && response.status === 200) {
+    const cache = await caches.open(CACHE);
+    await cache.put(request, response.clone());
+  }
+  return response;
+}
+
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET' || request.headers.has('range')) return;
@@ -30,7 +40,9 @@ self.addEventListener('fetch', (event) => {
 
   if (request.mode === 'navigate') {
     // Pages: network first so updates ship; cache is the offline fallback.
-    event.respondWith(fetchAndStore(request).catch(() => caches.match(request)));
+    // CHG-064: bypass the HTTP cache (GitHub Pages sends max-age=600), so a reload never runs an older index.html than the deploy.
+    // A navigation Request cannot be copied with new options, so fetch its URL; a redirected answer falls back to the old path.
+    event.respondWith(freshPage(request).catch(() => caches.match(request)));
     return;
   }
 
