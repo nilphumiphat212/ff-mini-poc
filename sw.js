@@ -1,5 +1,5 @@
 // CR-013 / SPEC-016: persistent asset cache. Bump CACHE only to force-evict everything.
-const CACHE = 'ffm-cache-v23'; // CHG-063: KTX2 hero GLBs and VFX sheets
+const CACHE = 'ffm-cache-v24'; // CHG-095: a v23 cache could hold index.html under a model URL (dev server answers a missing file with the page)
 const HASHED = /\/assets\/[^/]*-[\w-]{8}\.(js|css)$/;
 
 self.addEventListener('install', () => self.skipWaiting());
@@ -15,7 +15,9 @@ self.addEventListener('activate', (event) => {
 
 async function fetchAndStore(request) {
   const response = await fetch(request);
-  if (response.ok && response.status === 200) {
+  // never keep an HTML answer for a js/css/model/texture/audio URL: the dev server and some hosts answer a missing file with index.html (200)
+  const isPage = (response.headers.get('content-type') || '').includes('text/html');
+  if (response.ok && response.status === 200 && !isPage) {
     const cache = await caches.open(CACHE);
     await cache.put(request, response.clone());
   }
